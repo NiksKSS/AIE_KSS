@@ -1,0 +1,23 @@
+{
+  "ds1": {
+    "best_model": "kmeans",
+    "params": {
+      "k": 2
+    },
+    "criterion": "max_silhouette_vs_dbscan"
+  },
+  "ds2": {
+    "best_model": "kmeans",
+    "params": {
+      "k": 2
+    },
+    "criterion": "max_silhouette_vs_dbscan"
+  },
+  "ds3": {
+    "best_model": "kmeans",
+    "params": {
+      "k": 3
+    },
+    "criterion": "max_silhouette_vs_dbscan"
+  }
+}
