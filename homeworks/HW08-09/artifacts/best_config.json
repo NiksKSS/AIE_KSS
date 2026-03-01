@@ -1,0 +1,65 @@
+{
+  "experiment": "E4_Best",
+  "architecture": {
+    "type": "MLP",
+    "layers": [
+      {
+        "type": "Flatten",
+        "input": "28x28"
+      },
+      {
+        "type": "Linear",
+        "in": 784,
+        "out": 256
+      },
+      {
+        "type": "BatchNorm1d",
+        "num_features": 256
+      },
+      {
+        "type": "ReLU"
+      },
+      {
+        "type": "Linear",
+        "in": 256,
+        "out": 128
+      },
+      {
+        "type": "BatchNorm1d",
+        "num_features": 128
+      },
+      {
+        "type": "ReLU"
+      },
+      {
+        "type": "Linear",
+        "in": 128,
+        "out": 47
+      }
+    ],
+    "dropout": 0.0,
+    "use_batchnorm": true
+  },
+  "training": {
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "epochs_max": 30,
+    "epochs_actual": 15,
+    "early_stopping": {
+      "patience": 5,
+      "metric": "val_accuracy"
+    }
+  },
+  "dataset": {
+    "name": "EMNIST_balanced",
+    "train_samples": 104800,
+    "val_samples": 26200,
+    "test_samples": 32800,
+    "num_classes": 47
+  },
+  "results": {
+    "best_val_accuracy": 0.8505,
+    "test_accuracy": 0.8459
+  }
+}
