@@ -1,0 +1,8 @@
+experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_accuracy,test_accuracy,precision,recall,mean_iou,notes
+C1,classification,STL10,42,SimpleCNN-3conv,Adam,0.001,10,0.58,,,,,no augmentations
+C2,classification,STL10,42,SimpleCNN-3conv,Adam,0.001,10,0.534,,,,,"with augmentations: RandomCrop, HFlip, ColorJitter, Rotation"
+C3,classification,STL10,42,ResNet18-head-only,Adam,0.001,10,0.941,,,,,"pretrained ResNet18, backbone frozen, only fc trained"
+C4,classification,STL10,42,ResNet18-finetune-layer4+fc,Adam,0.001,10,0.905,,,,,"pretrained ResNet18, layer4+fc unfrozen"
+C3-test,classification,STL10,42,ResNet18-head-only,Adam,0.001,10,0.941,0.9417,,,,backbone frozen | FINAL TEST
+V1,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50 (pretrained),—,—,—,,,0.7007,0.8222,0.6472,"argmax + foreground classes 8 (cat), 12 (dog)"
+V2,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50 (pretrained),—,—,—,,,0.6826,0.8196,0.6453,argmax + foreground + remove connected components < 500px

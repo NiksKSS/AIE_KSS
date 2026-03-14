@@ -1,0 +1,14 @@
+{
+    "experiment_id": "C3",
+    "dataset": "STL10",
+    "architecture": "ResNet18-head-only",
+    "img_size": 224,
+    "transform": "transform_resnet",
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "epochs": 10,
+    "seed": 42,
+    "best_val_accuracy": 0.941,
+    "test_accuracy": 0.9417,
+    "notes": "backbone frozen"
+}
