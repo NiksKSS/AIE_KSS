@@ -1,11 +1,18 @@
 {
   "experiment": "E4_Best",
+  "seed": 42,
+  "val_split_seed": 42,
   "architecture": {
     "type": "MLP",
+    "input_dim": 784,
+    "hidden1": 256,
+    "hidden2": 128,
+    "num_classes": 47,
+    "use_batchnorm": true,
+    "dropout_p": 0.0,
     "layers": [
       {
-        "type": "Flatten",
-        "input": "28x28"
+        "type": "Flatten"
       },
       {
         "type": "Linear",
@@ -36,16 +43,19 @@
         "in": 128,
         "out": 47
       }
-    ],
-    "dropout": 0.0,
-    "use_batchnorm": true
+    ]
   },
   "training": {
+    "seed": 42,
     "optimizer": "Adam",
     "learning_rate": 0.001,
+    "momentum": 0.0,
+    "weight_decay": 0.0,
+    "dropout_p": 0.0,
+    "use_batchnorm": true,
     "batch_size": 64,
     "epochs_max": 30,
-    "epochs_actual": 15,
+    "epochs_actual": 16,
     "early_stopping": {
       "patience": 5,
       "metric": "val_accuracy"
@@ -53,13 +63,15 @@
   },
   "dataset": {
     "name": "EMNIST_balanced",
-    "train_samples": 104800,
-    "val_samples": 26200,
-    "test_samples": 32800,
+    "train_samples": 90240,
+    "val_samples": 22560,
+    "test_samples": 18800,
     "num_classes": 47
   },
   "results": {
-    "best_val_accuracy": 0.8505,
-    "test_accuracy": 0.8459
+    "best_val_accuracy": 0.8533,
+    "best_val_loss": 0.459,
+    "test_accuracy": 0.8513,
+    "test_loss": 0.4781
   }
 }
