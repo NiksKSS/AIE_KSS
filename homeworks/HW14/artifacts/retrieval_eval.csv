@@ -1,0 +1,11 @@
+query,expected_source,retrieved_sources,hit_at_k,rank_of_first_relevant
+How do I create an account?,How can I create an account?,How can I create an account?; What payment methods do you accept?; Are my personal and payment details secure?,1,1.0
+What payment methods are supported?,What payment methods do you accept?,What payment methods do you accept?; Are my personal and payment details secure?; Can I order by phone?,1,1.0
+How to track my shipment?,How can I track my order?,How can I track my order?; What should I do if my package is lost or damaged?; Can I change my shipping address after placing an order?,1,1.0
+Can I return a product?,What is your return policy?,What is your return policy?; Can I cancel my order?; What should I do if my package is lost or damaged?,1,1.0
+How to reset my password?,"I forgot my password, what should I do?",How can I create an account?; How can I contact customer support?; Can I cancel my order?,0,
+Do you ship internationally?,Do you offer international shipping?,Do you offer international shipping?; Can I change my shipping address after placing an order?; Can I order by phone?,1,1.0
+How to cancel an order?,Can I cancel my order?,Can I cancel my order?; Can I order by phone?; Can I change my shipping address after placing an order?,1,1.0
+What is the delivery time?,How long does shipping take?,How long does shipping take?; Can I cancel my order?; Can I order by phone?,1,1.0
+How to contact support?,How can I contact customer support?,How can I contact customer support?; What should I do if my package is lost or damaged?; Can I cancel my order?,1,1.0
+Is my payment data safe?,Are my personal and payment details secure?,Are my personal and payment details secure?; What payment methods do you accept?; What should I do if my package is lost or damaged?,1,1.0

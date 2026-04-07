@@ -1,0 +1,4 @@
+query,before_retrieved_sources,after_retrieved_sources,changed
+How to reset my password?,How can I create an account?; How can I contact customer support?; Can I cancel my order?,"I forgot my password, what should I do?; What is two-factor authentication?; How do I change my email address?",True
+How to enable 2FA?,How can I create an account?; Are my personal and payment details secure?; What payment methods do you accept?,"What is two-factor authentication?; How can I create an account?; I forgot my password, what should I do?",True
+Change my email,Can I change my shipping address after placing an order?; How can I contact customer support?; Can I cancel my order?,"How do I change my email address?; I forgot my password, what should I do?; Can I change my shipping address after placing an order?",True
