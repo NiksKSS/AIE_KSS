@@ -1,11 +1,13 @@
-query,expected_source,retrieved_sources,hit_at_k,rank_of_first_relevant
-How do I create an account?,How can I create an account?,How can I create an account?; What payment methods do you accept?; Are my personal and payment details secure?,1,1.0
-What payment methods are supported?,What payment methods do you accept?,What payment methods do you accept?; Are my personal and payment details secure?; Can I order by phone?,1,1.0
-How to track my shipment?,How can I track my order?,How can I track my order?; What should I do if my package is lost or damaged?; Can I change my shipping address after placing an order?,1,1.0
-Can I return a product?,What is your return policy?,What is your return policy?; Can I cancel my order?; What should I do if my package is lost or damaged?,1,1.0
-How to reset my password?,"I forgot my password, what should I do?",How can I create an account?; How can I contact customer support?; Can I cancel my order?,0,
-Do you ship internationally?,Do you offer international shipping?,Do you offer international shipping?; Can I change my shipping address after placing an order?; Can I order by phone?,1,1.0
-How to cancel an order?,Can I cancel my order?,Can I cancel my order?; Can I order by phone?; Can I change my shipping address after placing an order?,1,1.0
-What is the delivery time?,How long does shipping take?,How long does shipping take?; Can I cancel my order?; Can I order by phone?,1,1.0
-How to contact support?,How can I contact customer support?,How can I contact customer support?; What should I do if my package is lost or damaged?; Can I cancel my order?,1,1.0
-Is my payment data safe?,Are my personal and payment details secure?,Are my personal and payment details secure?; What payment methods do you accept?; What should I do if my package is lost or damaged?,1,1.0
+query,expected_source,retrieved_sources,hit_at_k,recall_at_k,rank_of_first_relevant,mrr_at_k
+Когда публикуется запись вебинара после занятия?,doc_07,doc_07|doc_08|doc_09,1,1.0,1,1.0
+Сколько дней дается на доработку домашней работы после замечаний?,doc_04,doc_09|doc_04|doc_07,1,1.0,2,0.5
+"Какие условия нужны, чтобы получить сертификат?",doc_06,doc_06|doc_03|doc_12,1,1.0,1,1.0
+Можно ли вернуть деньги после старта курса?,doc_03,doc_03|doc_01|doc_07,1,1.0,1,1.0
+Что входит в тариф Pro?,doc_02,doc_02|doc_12|doc_03,1,1.0,1,1.0
+Как быстро менторы отвечают в учебном чате?,doc_05,doc_05|doc_12|doc_10,1,1.0,1,1.0
+Какие технические требования к ноутбукам и нужен ли GPU?,doc_08,doc_08|doc_04|doc_05,1,1.0,1,1.0
+Сколько времени дается на итоговый проект и его доработку?,doc_09,doc_09|doc_04|doc_06,1,1.0,1,1.0
+"Что будет, если найдут плагиат в домашнем задании?",doc_10,doc_10|doc_03|doc_01,1,1.0,1,1.0
+Как оценивают вклад участников в командном проекте?,doc_11,doc_09|doc_11|doc_12,1,1.0,2,0.5
+Что включает карьерный трек и гарантирует ли он оффер?,doc_12,doc_12|doc_02|doc_04,1,1.0,1,1.0
+"Как завершить onboarding и что будет, если не заполнить чек-лист?",doc_01,doc_01|doc_03|doc_06,1,1.0,1,1.0

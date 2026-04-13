@@ -1,4 +1,6 @@
 query,before_retrieved_sources,after_retrieved_sources,changed
-How to reset my password?,How can I create an account?; How can I contact customer support?; Can I cancel my order?,"I forgot my password, what should I do?; What is two-factor authentication?; How do I change my email address?",True
-How to enable 2FA?,How can I create an account?; Are my personal and payment details secure?; What payment methods do you accept?,"What is two-factor authentication?; How can I create an account?; I forgot my password, what should I do?",True
-Change my email,Can I change my shipping address after placing an order?; How can I contact customer support?; Can I cancel my order?,"How do I change my email address?; I forgot my password, what should I do?; Can I change my shipping address after placing an order?",True
+Можно ли скачать уроки в приложении и как работает офлайн-доступ?,doc_07|doc_10|doc_06,doc_13|doc_06|doc_04,True
+Какие документы нужны для налогового вычета и сколько их готовят?,doc_08|doc_02|doc_10,doc_14|doc_08|doc_02,True
+Что такое заморозка потока и когда ее можно запросить?,doc_11|doc_01|doc_03,doc_15|doc_11|doc_01,True
+Можно ли скачать запись вебинара на устройство?,doc_07|doc_08|doc_04,doc_07|doc_13|doc_08,True
+Что происходит с дедлайнами после разморозки участия?,doc_01|doc_03|doc_07,doc_15|doc_01|doc_03,True

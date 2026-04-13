@@ -1,0 +1,25 @@
+{
+  "base_pipeline": {
+    "chunk_size": 420,
+    "overlap": 80,
+    "top_k": 3,
+    "hit_at_k": 1.0,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 0.9167,
+    "n_queries": 12
+  },
+  "experiment_top_k": [
+    {
+      "top_k": 1,
+      "hit_at_k": 0.8333,
+      "recall_at_k": 0.8333,
+      "mrr_at_k": 0.8333
+    },
+    {
+      "top_k": 3,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "mrr_at_k": 0.9167
+    }
+  ]
+}
