@@ -1,0 +1,1 @@
+"""Weather prediction project package."""

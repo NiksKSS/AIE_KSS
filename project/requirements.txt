@@ -1,0 +1,15 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pandas==2.2.3
+numpy==2.2.1
+scikit-learn==1.7.2
+joblib==1.4.2
+python-dotenv==1.0.1
+streamlit==1.41.1
+geopandas==1.0.1
+folium==0.19.3
+streamlit-folium==0.24.0
+shapely==2.0.6
+pytest==8.3.4
+httpx>=0.27.0

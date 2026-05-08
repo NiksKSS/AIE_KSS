@@ -1,0 +1,19 @@
+data_path: ./data/data.csv
+model_path: ./artifacts/model.pkl
+geojson_path: ./data/Krasnodar_Municipalities_GeoJson.txt
+service:
+  host: 0.0.0.0
+  port: 8000
+  log_level: INFO
+model:
+  type: ExtraTreesRegressor
+  task: multi_output_regression
+  target_variables:
+    - precipitation
+    - temp
+    - tmax
+    - tmin
+    - solar_radiation
+    - wind_speed
+    - wind_direction
+    - day_length_hours
