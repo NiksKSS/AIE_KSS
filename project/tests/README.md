@@ -5,9 +5,16 @@
 - контракт endpoint `/health`;
 - валидность минимального payload для `/predict`.
 
-Запуск:
+## Зависимости
+
+Тесты загружают `artifacts/model.pkl` через `WeatherPredictor`. **Без этого файла тесты не запустятся.**
+
+Если модель отсутствует — см. инструкцию в `project/README.md`, раздел «Получение данных и модели».
+
+## Запуск
 
 ```bash
 cd project
-PYTHONPATH=. pytest tests
+source .venv/bin/activate
+PYTHONPATH=. pytest tests -v
 ```

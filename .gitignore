@@ -56,3 +56,9 @@ logs/
 *.bak
 *.old
 homeworks/HW08-09/data/
+
+# Large local project artifacts. Keep external links or small samples in Git.
+project/data/*.csv
+!project/data/sample_*.csv
+project/artifacts/*.pkl
+!project/artifacts/README.md
