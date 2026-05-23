@@ -15,7 +15,7 @@
 
 ## Политика хранения
 
-Полные CSV-файлы большие, поэтому они добавлены в `.gitignore`. В репозитории хранится только `sample_data.csv`, ноутбук подготовки и описание данных. Для запуска API и Streamlit преподавателю нужны локальные файлы:
+Некоторые CSV-файлы (`data.csv`, `Extended_climate_data.csv`) большие, поэтому они добавлены в `.gitignore`. В репозитории хранятся `sample_data.csv`, `Krasnodar_day_length_1995_2025.csv`, `Krasnodar_infrastructure_1995_2025.csv`, ноутбук подготовки и описание данных. Для запуска API и Streamlit преподавателю нужны локальные файлы:
 
 - `data/data.csv`;
 - `data/Krasnodar_Municipalities_GeoJson.txt`;

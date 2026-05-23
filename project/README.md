@@ -171,14 +171,22 @@ ls -lh data/data.csv artifacts/model.pkl
 
 #### Шаг 1. Подготовьте данные
 
-Запустите ноутбук `data/preprocess_data.ipynb`:
+> **⚠ Примечание:** Ноутбуку требуется `Extended_climate_data.csv` (804 МБ), который не хранится в Git.
+> Если его нет — скачайте из той же папки Google Drive:
+> ```bash
+> # Из папки project/:
+> curl -L -o data/Extended_climate_data.csv "https://drive.usercontent.google.com/download?id=1jFe0INTC4l_z_TXbIYAWo8VJCuE_eK0d&export=download&confirm=t"
+> ```
+
+Запустите ноутбук из папки `data/` (так как в нём используются относительные пути):
 
 ```bash
 # Убедитесь, что виртуальное окружение активировано
 source .venv/bin/activate
 
-# Запустите Jupyter
-jupyter notebook data/preprocess_data.ipynb
+# Перейдите в папку data/ и запустите ноутбук
+cd data
+jupyter notebook preprocess_data.ipynb
 ```
 
 Что делает этот ноутбук:
@@ -193,10 +201,16 @@ jupyter notebook data/preprocess_data.ipynb
 
 #### Шаг 2. Обучите модель
 
-Запустите ноутбук `notebooks/train_model.ipynb`:
+> **⚠ Примечание:** Перед запуском убедитесь, что `data/data.csv` существует (создан на шаге 1).
+> Ноутбук читает данные из `data/data.csv` и сохраняет модель в `artifacts/model.pkl`.
+
+Запустите ноутбук из папки `project/`:
 
 ```bash
-# Убедитесь, что виртуальное окружение активировано
+# Убедитесь, что вы в папке project/
+cd project
+
+# Активируйте окружение
 source .venv/bin/activate
 
 # Запустите Jupyter
